@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Kenia&display=swap');
+
+body{
+    background-color: #1695DA;
+    margin: 0 auto;
+    line-height: 20px;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+div.boxTitle {
+   background-color: white;
+   font-family: 'Kenia', cursive;
+   position: absolute;
+   z-index: 999;
+   padding: 50px;
+}
+header h1{
+    font-size: 80px;
+}
+header p{
+    font-size: 25px;
+}
+/* SLIDER */
+div.slider{
+  
+    overflow: hidden;
+   
+}
+div.slides{
+    display: flex;
+    flex-direction: row;
+    animation: glisse 10s infinite ease;
+    width: calc(500px *4);
+    height: 720px;
+    padding: 20px;
+}
+.slide{
+    opacity: 0.5;
+}
+
+@keyframes glisse{
+    0%{
+        transform: translateX(0);
+    }
+    10%{
+        transform: translateX(0);
+    }
+    
+    33%{
+        transform: translateX(-500px);
+    }
+    43%{
+        transform: translateX(-500px);
+    }
+    66%{
+        transform: translateX(-1000px);
+    }
+    76%{
+        transform: translateX(-1000px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
