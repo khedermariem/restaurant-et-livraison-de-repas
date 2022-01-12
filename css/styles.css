@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Kenia&display=swap');
-
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
-    background-color: #1695DA;
+    background-color:#ffaa6;
     margin: 0 auto;
     line-height: 20px;
 }
@@ -20,9 +23,12 @@ div.boxTitle {
 }
 header h1{
     font-size: 80px;
+align-items: center;
 }
 header p{
     font-size: 25px;
+    align-items: center;
+
 }
 /* SLIDER */
 div.slider{
@@ -30,6 +36,14 @@ div.slider{
     overflow: hidden;
    
 }
+
+.salade{
+    background-image: url("/images/salad-banner.jpg");
+}
+
+
+
+
 div.slides{
     display: flex;
     flex-direction: row;
@@ -41,7 +55,57 @@ div.slides{
 .slide{
     opacity: 0.5;
 }
+/*menu*/
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+ transform: translateY(-130px);
+}
+nav.menu{
+    width: calc(500px *4);
+}
+nav.menu ul{
+    display: flex;
+   
+}
+nav.menu ul li  {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+}
+nav.menu ul li:hover {
+    transform: scale(0.9);
+    transition: 0.3s all;
+}
+nav.menu ul li a {
+    font-size: 50px;
+    color: white;
+    text-decoration: none;
+  
 
+}
+.navItems{
+    flex: 1;
+    height: 300px;
+    
+
+}
+.pizza{
+    background-image: url("/images/pizza-banner.jpg");
+}
+
+.boisons{
+background-image: url("/images/boisson-banner.jpg");
+}
+.salade{
+    background-image: url("/images/salad-banner.jpg");
+}
+.burguer{
+    background-image: url("/images/burger-banner.jpg");
+}
 @keyframes glisse{
     0%{
         transform: translateX(0);
