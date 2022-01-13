@@ -8,13 +8,14 @@
     <link rel="stylesheet" href="/css/normalize.css">
 
     <link rel="stylesheet" href="/css/styles.css">
+    <script src="/js/stickyscroll.js"></script>
     <title>Livraison de Repas</title>
 
 </head>
 
 <body>
     <header>
-      <div class="boxTitle">
+        <div class="boxTitle">
             <h1> Croustishop </h1>
             <p> Des petits plats tout en douceur</p>
         </div>
@@ -30,17 +31,167 @@
         </div>
     </header>
     <!-- MENU  de navigation -->
-    <div class="container">
-        <nav class="menu">
+
+    <div id="sticky-header" class="container ">
+        <nav class="menu ">
             <ul>
-                <li class=" navItems pizza"><a href="#">Pizza</a> </li>
-                <li class="navItems salade"><a href="#">Salade</a> </li>
-                <li class="navItems burguer"><a href="#">Burguer</a> </li>
-                <li class="navItems boisons"><a href="#">Boison</a> </li>
+                <li class=" navItems pizza"><a href="#pizza">Pizza</a> </li>
+                <li class="navItems salade"><a href="#salade">Salade</a> </li>
+                <li class="navItems burger"><a href="#burger">Burger</a> </li>
+                <li class="navItems boisson"><a href="#boisson">Boisson</a> </li>
             </ul>
         </nav>
 
     </div>
+
+    <!--sections-->
+    <main id="main">
+        <section id="pizza" class="pizza">
+            <div class="items">
+
+                <img src="/images/pizza1.jpg" alt="pizza1">
+                <div class="item-infos">
+                    <h3>Caprapiquante</h3>
+                    <hr>
+
+                    <p>Chevre, Miel, Graines, Toastés, Piment rouge</p>
+                    <p class="price">12£00</p>
+                </div>
+            </div>
+            <div class="items">
+
+                <img src="/images/pizza2.jpg" alt="pizza2">
+                <div class="item-infos">
+                    <h3> Strategia</h3>
+                    <hr>
+                    <p> Tomate, Mozarelle, Baselique</p>
+                    <p class="price">9£00</p>
+                </div>
+            </div>
+            <div class="items">
+
+
+                <img src="/images/pizza3.jpg" alt="pizza3">
+                <div class="item-infos">
+                    <h3> Natural</h3>
+                    <hr>
+
+                    <p> Chévre, Courguette, Baselique,Carotte, Huile</p>
+                    <p class="price">10£00</p>
+                </div>
+            </div>
+
+        </section>
+        <section id="salade" class="salade">
+            <div class="items">
+
+                <img src="/images/salade1.jpg" alt="salade1">
+                <div class="item-infos">
+                    <h3>Salade poulet bettrave</h3>
+                    <hr>
+
+                    <p>Poulet, Mache, bettrave, Acovat</p>
+                    <p class="price">5£00</p>
+                </div>
+            </div>
+            <div class="items">
+
+                <img src="/images/salade2.jpg" alt="salade2">
+                <div class="item-infos">
+                    <h3> Slade gec maison</h3>
+                    <hr>
+                    <p> Salade, tomates, olives, feta, oignons, basillique</p>
+                    <p class="price">4£00</p>
+                </div>
+            </div>
+            <div class="items">
+
+
+                <img src="/images/salade3.jpg" alt="salade3">
+                <div class="item-infos">
+                    <h3> Slade tomates mozarella</h3>
+                    <hr>
+
+                    <p> Tomates, mozarella, salade, maches, epinard</p>
+                    <p class="price">6£00</p>
+                </div>
+            </div>
+
+        </section>
+        <section id="burger" class="burger">
+            <div class="items">
+
+                <img src="/images/burger1.jpg" alt="burger1">
+                <div class="item-infos">
+                    <h3>Légendaire</h3>
+                    <hr>
+
+                    <p>1 steak + bacon + chedar</p>
+                    <p class="price">4£00</p>
+                </div>
+            </div>
+            <div class="items">
+
+                <img src="/images/burger2.jpg" alt="burger2">
+                <div class="item-infos">
+                    <h3> Villageois</h3>
+                    <hr>
+                    <p> 1 steak + bacon + salade</p>
+                    <p class="price">5£00</p>
+                </div>
+            </div>
+            <div class="items">
+
+
+                <img src="/images/burger3.jpg" alt="burger3">
+                <div class="item-infos">
+                    <h3> Basique</h3>
+                    <hr>
+
+                    <p> 2 Steaks + chedar</p>
+                    <p class="price">6£00</p>
+                </div>
+            </div>
+
+        </section>
+        <section id="boisson" class="boisson">
+            <div class="items">
+
+                <img src="/images/boisson1.jpg" alt="boisson1">
+                <div class="item-infos">
+                    <h3>Jus Multifruits</h3>
+                    <hr>
+
+                    <p>Orange, pomme, bananne</p>
+                    <p class="price">5£00</p>
+                </div>
+            </div>
+            <div class="items">
+
+                <img src="/images/boisson2.jpg" alt="boisson2">
+                <div class="item-infos">
+                    <h3> Jus en pastéque</h3>
+                    <hr>
+                    <p> La pastéque du jardin</p>
+                    <p class="price">4£00</p>
+                </div>
+            </div>
+            <div class="items">
+
+
+                <img src="/images/boisson3.jpg" alt="boisson3">
+                <div class="item-infos">
+                    <h3> Café</h3>
+                    <hr>
+
+                    <p> Nexpresso, café, ...</p>
+                    <p class="price">3£00</p>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
 </body>
 
 </html>

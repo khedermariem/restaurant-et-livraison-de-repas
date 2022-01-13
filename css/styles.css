@@ -1,18 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Kenia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Martel:wght@700&display=swap');
 *{
     margin: 0;
     padding: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
-    background-color:#ffaa6;
-    margin: 0 auto;
+    background-color: #FF5733;
+    margin: 0 0 ;
     line-height: 20px;
+    
+  
 }
 header{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    
+
 }
 div.boxTitle {
    background-color: white;
@@ -20,7 +30,8 @@ div.boxTitle {
    position: absolute;
    z-index: 999;
    padding: 50px;
-}
+   top:180px;
+   box-shadow: 14px 4px 36px 3px rgba(189,163,36,0.66);}
 header h1{
     font-size: 80px;
 align-items: center;
@@ -32,14 +43,11 @@ header p{
 }
 /* SLIDER */
 div.slider{
-  
+ width: 100%;
     overflow: hidden;
    
 }
 
-.salade{
-    background-image: url("/images/salad-banner.jpg");
-}
 
 
 
@@ -57,25 +65,52 @@ div.slides{
 }
 /*menu*/
 .container{
-    width: 100%;
-    display: flex;
     justify-content: center;
- transform: translateY(-130px);
-}
+    transform: translateY(-130px);
+    display: flex;
+    flex-direction: row;
+} 
 nav.menu{
     width: calc(500px *4);
+    height:200px;
+
+
+}
+
+ .sticky nav.menu ul{
+  
+    flex-direction: column;
+
 }
 nav.menu ul{
     display: flex;
-   
+    flex-direction: row;
 }
-nav.menu ul li  {
+ nav.menu ul li  {
     list-style-type: none;
     display: flex;
     align-items: center;
     justify-content: center;
- 
+    transition: 0.3s all;
+    width: calc(500px *4);
+   
+    
+   
 }
+.sticky, nav.menu ul li  {
+   width:200px;
+    margin: 2px;
+    height:200px;
+
+
+}
+.sticky nav.menu ul li a  {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+     
+ 
+ }
 nav.menu ul li:hover {
     transform: scale(0.9);
     transition: 0.3s all;
@@ -95,16 +130,83 @@ nav.menu ul li a {
 }
 .pizza{
     background-image: url("/images/pizza-banner.jpg");
+    background-repeat: none;
+    background-size: cover;
 }
 
-.boisons{
+.boisson{
 background-image: url("/images/boisson-banner.jpg");
+background-repeat: none;
+background-size: cover;
+
 }
 .salade{
     background-image: url("/images/salad-banner.jpg");
+    background-repeat: none;
+    background-size: cover;
+
 }
-.burguer{
+.burger{
     background-image: url("/images/burger-banner.jpg");
+    background-repeat: none;
+    background-size: cover;
+
+}
+/* section plat */
+.items{
+    background-color: white;
+    margin: 20px;
+    display: flex;
+    cursor: pointer;
+    transition: 0.3s all;
+    width: 50%;
+   justify-items: center;
+
+}
+.items:hover{
+    transform: scale(1.1);
+    transition: 0.3s all;
+   box-shadow: 17px 33px 13px -8px rgba(0,0,0,0.25)
+   ; 
+  
+
+}
+.item-infos{
+    padding: 20px;
+    line-height: 40px;
+    font-family: 'Martel', serif;
+}
+.item-infos hr {
+    margin: 10px 0 10px 0;
+    opacity: 0.5;
+}
+.item-infos h3{
+    font-size: 30px;
+}
+
+p.price{
+    font-weight: bold;
+    font-size: 22px;
+}
+section{
+    padding: 80px;
+}
+section img{
+   width: 300px;
+   
+}
+.sticky{
+    position: fixed;
+    width: 500px;
+    top: 30vh;
+    right: 50px;
+    transform: translateY(10px);
+    transition: 0.6s all;
+   
+   
+}
+.sticky + #main {
+    padding-top: 200px;
 }
 @keyframes glisse{
     0%{
