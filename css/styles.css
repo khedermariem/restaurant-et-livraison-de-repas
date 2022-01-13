@@ -208,6 +208,13 @@ section img{
 .sticky + #main {
     padding-top: 200px;
 }
+#mainFooter{
+    font-size: 22px;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    font-family: 'Martel', serif;
+}
 @keyframes glisse{
     0%{
         transform: translateX(0);
